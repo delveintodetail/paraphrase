@@ -3,10 +3,10 @@ from langchain import PromptTemplate
 from langchain.llms import OpenAI
 import os
 
-st.write(
-    "Has environment variables been set:",
-    os.environ["openai_api_key"] = st.secrets["password"],
-)
+#st.write(
+#    "Has environment variables been set:",
+os.environ["openai_api_key"] = st.secrets["password"],
+#)
 
 
 openai_api_key = os.environ["openai_api_key"]
